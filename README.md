@@ -27,6 +27,7 @@ Add nuxt-apache-config to modules section of `nuxt.config.js`
         https: true,
         redirection: true,
         redirectUrl: '404.html',
+        indexes: true,
         onlyGET: true,
       }
     ] ,
@@ -37,6 +38,7 @@ Add nuxt-apache-config to modules section of `nuxt.config.js`
 - `https` redirects http pages to https
 - `redirection` allows to redirect 404 pages to the homepage
 - `redirectUrl` allows to define the redirect page
+- `indexes` redirect indexes list to 403 error
 - `onlyGET` allows to limit requests to the GET type
 
 Optionally add .htaccess to .gitignore file.
